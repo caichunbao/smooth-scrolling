@@ -1,0 +1,22 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "平滑的滚动",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caichunbao/smooth-scrolling.git"
+  },
+  "keywords": [
+    "平滑滚动"
+  ],
+  "author": "Chunbao Tsai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caichunbao/smooth-scrolling/issues"
+  },
+  "homepage": "https://github.com/caichunbao/smooth-scrolling#readme"
+}
