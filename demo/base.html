@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>iScroll基本实例</title>
+  <script src="../build/lids/iscroll-master/build/iscroll.js"></script>
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0
+    }
+    
+    ul {
+      padding: 0;
+      margin: 0
+    }
+    
+    #wrapper {
+      position: relative;
+      height: 200px;
+      overflow: hidden
+    }
+    
+    ul li {
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid #eee;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+    </ul>
+  </div>
+</body>
+<script type="text/javascript">
+  /*
+   * iScroll作用于滚动区域的外层。在上面的例子中，UL元素能进行滚动。只有容器元素的第一个子元素能进行滚动，其他子元素完全被忽略。
+   *
+   *
+   **/
+
+  window.onload = function() {
+    // 初始化，开启鼠标滚轮支持和滚动条支持
+    var myScroll = new IScroll("#wrapper", {
+      mouseWheel: true,
+      scrollbars: true
+    });
+
+    // 在初始化后你可以通过options对象访问标准化值
+    console.dir(myScroll.options);
+  }
+</script>
+
+</html>
